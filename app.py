@@ -9,6 +9,10 @@ Original file is located at
 import joblib
 import streamlit as st
 
+# Load the DataFrame from the pickle file
+with open('songs.pkl', 'rb') as f:
+    df = pickle.load(f)
+
 def main():
     st.title("Music Recommendation System")
 
