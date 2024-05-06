@@ -8,6 +8,7 @@ Original file is located at
 """
 import joblib
 import streamlit as st
+import pickle
 
 # Load the DataFrame from the pickle file
 with open('songs.pkl', 'rb') as f:
